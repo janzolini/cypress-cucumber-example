@@ -1,0 +1,35 @@
+{
+  "name": "cypress-cucumber-e2e-test",
+  "version": "1.0.0",
+  "description": "Projeto base para testes e2e em cypress e cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cypress:headless": "cypress run --headless --env tags=@e2e",
+    "cypress:open": "cypress open",
+    "cypress:open-tag": "cypress open --env tags=@e2e",
+    "generate-report": "node ./cypress/support/multiple-cucumber-html-reporter.js"
+  },
+  "author": "Jonathan Teixeira Anzolini",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.2.0",
+    "esbuild": "0.19.11",
+    "faker-br": "^0.4.1",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/step_definitions/**/*.{js,ts}"
+    ],
+    "json": {
+      "enabled": true,
+      "output": "cypress/report/cucumber.json",
+      "formatter": "cypress/report/cucumber-json-formatter-mac"
+    },
+    "messages": {
+      "enabled": false
+    }
+  }
+}
