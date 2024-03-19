@@ -9,3 +9,8 @@ Contexto:
   Cenário: Realizar compra de um heroi
     Quando efetuar a compra de um heroi
     Então compra deve ser efetuada com sucesso
+
+  @desafio
+  Cenário: Validar funcionalidade de like em um heroi
+    Quando realizar a ação de like em um heroi
+    Então like deve ser contabilizado no heroi
