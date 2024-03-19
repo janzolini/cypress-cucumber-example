@@ -1,9 +1,5 @@
 const basePage = {
 
-	validatePage(page) {
-		cy.url().should('contain', '/' + page)
-	},
-
 	returnDataTableObject: dataTable => {
 		const forLength = dataTable.rawTable.length || 0;
 		const data = [];

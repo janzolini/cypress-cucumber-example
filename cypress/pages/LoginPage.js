@@ -1,14 +1,29 @@
 export class LoginPage {
 
-    logIn(user, password) {
-        cy.get(pageObjects.inputUser).type(user);
-        cy.get(pageObjects.inputPassword).type(password);
-        cy.get(pageObjects.buttonSubmit).click();
+    realizarLogin(email, senha) {
+        cy.contains('button', 'Login').click()
+        cy.get(pageObjects.inputEmail).type(email);
+        cy.get(pageObjects.inputPassword).type(senha);
+    }
+
+    selecionarBotaoEntrar() {
+        cy.contains('button', 'Sign in').click()
+    }
+
+    validarMensagemErro() {
+        cy.get(pageObjects.mensagemErroLogin)
+            .should('be.visible')
+            .should('contain', "Invalid email or password")
+    }
+
+    validarLoginEfetuado() {
+        cy.contains('button', 'Logout')
+            .should('be.visible')
     }
 }
 
 const pageObjects = {
-    inputUser: "input[data-test='username']",
-    inputPassword: "input[data-test='password']",
-    buttonSubmit: "input[data-test='login-button']",
+    inputEmail: "[data-cy='email']",
+    inputPassword: "[data-cy='password']",
+    mensagemErroLogin: "div[class='text-red-500']"
 }

@@ -27,7 +27,7 @@ module.exports = defineConfig({
 
   e2e: {
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://www.saucedemo.com/",
+    baseUrl: "http://localhost:3000/heroes",
     supportFile: "cypress/support/e2e.js",
     setupNodeEvents,
   },
