@@ -25,7 +25,3 @@ When("selecionar o {string}", (product) => {
 Then(/^página do produto deve ser apresentada com o "(.*?)"$/, (value) => {
     productsPage.validatePageProducts(value)
 });
-
-Given(`que acesse o site com a resolução de um dispositivo mobile`, () => {
-    cy.viewport('iphone-xr')
-});

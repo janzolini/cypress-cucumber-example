@@ -21,6 +21,7 @@ root
 │   ├── report
 │   ├── support
 ├── cypress.config.js
+├── cypress.env.json
 ├── package.json
 ├── .gitignore
 ```
@@ -36,8 +37,8 @@ root
 
 ## 💻 Pre-requisitos
 
-1. Node JS
-2. Opcional: Json-formatter depende do seu sistema operacional: https://github.com/cucumber/json-formatter
+1. Node JS (v22.5.1)
+2. Opcional: Json-formatter de acordo com o sistema operacional: https://github.com/cucumber/json-formatter
  
 ## :scroll: Setup
 
@@ -64,12 +65,12 @@ $ yarn cypress:open
 
 Executando o Cypress em headles:
 ```
-$ yarn cypress:headless
+$ yarn cypress:run
 ```
 
 Comando utilizado para geração do relatório de execução local:
 ```
-$ yarn generate-report
+$ yarn generate-local-report
 ```
 
 <img src="https://media.licdn.com/dms/image/D4D12AQGoFi4cMbApzQ/article-cover_image-shrink_720_1280/0/1691404661944?e=2147483647&v=beta&t=sOa1js9lZj2HWfEmEDMO4u0LT_1s1mYRIRrI2YOgG9Q" alt="exemplo imagem">

@@ -14,4 +14,3 @@ cypress/videos
 cypress/screenshots
 cucumber-messages.ndjson
 cypress/report/cucumber.json
-yarn.lock
