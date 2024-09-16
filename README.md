@@ -1,8 +1,8 @@
 # 🚀 Projeto de testes e2e automatizados com Cypress e Cucumber
 
-> Esse é um exemplo de uma estrutura inicial de testes automatizados web com o "Cypress" e "cypress-cucumber-preprocessor" que dá suporte para a escrita dos cenários com as regras gramaticais do Gherkin.
+> Esse é um exemplo de uma estrutura inicial de testes automatizados web com o "Cypress" com Cucumber (cypress-cucumber-preprocessor) que dá suporte para a escrita dos cenários com as regras gramaticais do Gherkin.
 > 
-> Cypress10 está sendo utilizado no projeto.
+> Cypress13 está sendo utilizado no projeto.
 
 
 ## :open_file_folder: Organização do projeto
